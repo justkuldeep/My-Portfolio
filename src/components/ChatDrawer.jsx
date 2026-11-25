@@ -251,14 +251,6 @@ export default function ChatDrawer({ open, onClose }) {
         )}
       </div>
 
-      <div className="quick-prompts-bar">
-        {ASK_AI.quickPrompts.map((p) => (
-          <button key={p.label} className="prompt-chip" onClick={() => send(p.prompt)}>
-            {p.label}
-          </button>
-        ))}
-      </div>
-
       <form
         className="terminal-input-bar"
         onSubmit={(e) => {
